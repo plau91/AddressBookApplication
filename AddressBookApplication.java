@@ -1,24 +1,10 @@
-
-/**
- * Main Program will initiate initAddressBookExercise which will
- * create two instances of AddressBook to be able to add to the list .
- * The main will call all of the vector methods like add, remove, search.
- * These methods can be reused as they are OOP designed.
- * @author AddressBook Application
- * @author Menu
- *
- * @param initAddressBookExercise
- *
- * @return toString method in AddressBookEntry
-**/
-
-
-
 package com.company;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.io.*;
+import java.io.FileNotFoundException;
 
 
 
@@ -27,21 +13,30 @@ public class AddressBookApplication {
 
 
 
-	//Main Program
-	public static  void initialize (String AddressBook) {
+    //Main Program
+    public static void main(String[] args) throws IOException {
+
+
+        AddressBook ab = new AddressBook();
+
+         Menu.presentMainLoop(ab);
+
+
+    }
 
 
 
+    //method
+    public static void initAddressBookExercise(AddressBook ab){
 
-		AddressBook ab = new AddressBook();
-		initiAddressBookExercise(ab); //look up name
-	}
+        //create 2 AddressEntry objects and store in ab and then do a listing on it
+        AddressEntry ab1 = new AddressEntry();
+        AddressEntry ab2 = new AddressEntry();
 
 
 
-	//method
-	public static void initiAddressBookExercise(AddressBook ab){
-		//create 2 AddressEntry objects and store in ab and then do a listing on it
+    }
 
-	}
+
+
 }

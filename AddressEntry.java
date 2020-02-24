@@ -1,24 +1,6 @@
 package com.company;
 
 
-/**
- *This is our class file for AddressEntry which will hold all
- *necessary class files and variables for AddressEntry
- * we also have our setter and getter methods and mutators
- *
- *@author AddressEntry
- *@author AddressEntryList
- *@param Setter methods
- * @param Getter methods
- * @return toString()
-
-**/
-
-java.lang.AddressBook;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class AddressEntry  {
     String firstName;
     String lastName;
@@ -41,15 +23,8 @@ public class AddressEntry  {
         this.email = email;
     }
 
-    void addressEntryList() {
-        firstName = "";
-        lastName = "";
-        street = "";
-        city = "";
-        state = "";
-        zip = "";
-        phone = "";
-        email = "";
+    public AddressEntry(){
+        //Default Constructor
     }
 
     // This is our setter's
@@ -120,9 +95,12 @@ public class AddressEntry  {
 
     // This is our toString function
     public String toString() {
-        return firstName + " " + lastName + ";"
-                return  street + " " + city + " " + state + " " + zip + " " + phone + " " + email + " ";
+        return firstName + " " + lastName + "\n" + street + " \n " + city + "," + state + " " + zip + " \n " + email + " \n " + phone;
 
     }
+    public String lastname() {
+        return lastName;
+    }
+
 
 }
