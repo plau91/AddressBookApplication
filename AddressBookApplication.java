@@ -6,6 +6,14 @@ import java.util.List;
 import java.io.*;
 import java.io.FileNotFoundException;
 
+/** AddressBookApplication Class
+ * Creates an instance of AddressBook called ab
+ * Main contains Menu loop for menu call options
+ * @author AddressBookApplication
+ * @author presentMainLoop(ab)
+ * @return initAddressBookExercise(AddressBook ab)
+ *
+ */
 
 
 public class AddressBookApplication {

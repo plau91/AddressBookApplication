@@ -1,5 +1,14 @@
 package com.company;
 
+/**
+ * AddressEntry class contains all our string variables for firstName, lastName, street, etc...
+ * Also has our setter and getter methods
+ * a default AddressEntry() constructor
+ * our toString() function which prints the formatted details for listing
+ * @author AddressEntry
+ *
+ */
+
 
 public class AddressEntry  {
     String firstName;

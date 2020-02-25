@@ -8,6 +8,16 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * AddressBook.java
+ * contains all the methods required, readFromFile(),add(), remove(), find(), and list().
+ * @author AddressBook
+ * @return readFromFile()
+ * @return add()
+ * @return remove()
+ * @return find()
+ * @return list()
+ */
 //This is where we store our list methods such as addition, search/find, remove, etc.
 public class AddressBook {
    static ArrayList<AddressEntry> addressList = new ArrayList<AddressEntry>();
@@ -26,9 +36,10 @@ public class AddressBook {
 
    public void find(){
 
-
+      //I need to create a separate
       System.out.println("Enter in all or the beginning of the Last Name of the contact you wish to find: \n");
       String removeLastName = input.next() + ".*";
+      //works by taking user input and basically ignoring the rest of the string with "*"
       addressList.remove(removeLastName + ".*");
 
       System.out.println(addressList.toString());
@@ -47,23 +58,23 @@ public class AddressBook {
 
 
       //see example
-      FileReader file_input = new FileReader("AddressInputDataFile.txt");
 
-      BufferedReader BR = new BufferedReader(file_input);
-      AddressEntry ae = new AddressEntry(fName, lName, stName, cName, sName, zName, pName, eName);
-      String fName = BR.readLine();
-      String lName = BR.readLine();
-      String stName = BR.readLine();
-      String cName = BR.readLine();
-      String sName = BR.readLine();
-      String zName = BR.readLine();
-      String pName = BR.readLine();
-      String eName = BR.readLine();
+
+      //AddressEntry ae = new AddressEntry(fName, lName, stName, cName, sName, zName, pName, eName);
+
+     // FileReader file_input = new FileReader("AddressInputDataFile.txt");
+
+      //BufferedReader BR = new BufferedReader(file_input);
+      //String Line = BR.readLine();
+     // String fName = BR.readLine();
       //LOOP to keep reading while more data in the file
-      while((fName = BR.readLine()) != null) {
+      //while(( fName = BR.readLine()) != null) {
+
+                //  String fName = BR.readLine();
+
 
          //reading in Line 1 of the "next AE" in the data file
-      }
+    //  }
       // { read in the lName //second line
 
       //Line 2= LastName  --> lName
@@ -85,13 +96,7 @@ public class AddressBook {
 
 
    }
-/*
 
-Dog fido = new Dog();
-
-//call the method eat on the fido object
-//fido.eat();
- */
 
 
    public void list(){

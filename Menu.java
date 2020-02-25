@@ -4,6 +4,26 @@ import java.util.Scanner;
 import java.io.*;
 import java.io.FileNotFoundException;
 import java.io.File;
+
+/**
+ * Class Menu which holds all our prompts and menu calls
+ * @author Menu
+ * @return prompt_FirstName()
+ * @return prompt_LastName()
+ * @return prompt_street()
+ * @return prompt_city()
+ * @return prompt_zip()
+ * @return prompt_state()
+ * @return prompt_phone()
+ * @return prompt_email()
+ * @return presentMainLoop()
+ * @return find()
+ * @return add()
+ * @return list()
+ * @return readFromFile()
+ * @return remove()
+ **/
+
 class Menu {
     //Scanner allows for user input
     static Scanner userInput = new Scanner(System.in);
